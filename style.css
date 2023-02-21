@@ -126,6 +126,11 @@ h3 {
   text-decoration: none;
 }
 
+.button:hover {
+  color: var(--clr-white);
+  background-color: var(--clr-very-dark-blue);
+}
+
 /* Header */
 .header {
   padding-block: 5.625rem 3.4375rem;
@@ -277,6 +282,28 @@ h3 {
   .header .nav-list a {
     display: block;
     padding-inline: 1.5625rem;
+  }
+}
+
+@media (min-width: 62em) {
+  .hero .container {
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1.875rem;
+  }
+
+  .featured-news {
+    grid-column: span 2;
+    column-gap: 2.8125rem;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: max-content min-content min-content;
+  }
+
+  .featured-news picture {
+    grid-column: span 2;
+  }
+
+  .featured-news h1 {
+    grid-row: span 2;
   }
 }
 
